@@ -19,5 +19,5 @@ sub cmark_markdown_to_html(Str $text,
     is native("cmark") is export {*};
 
 sub commonmark-to-html( Str $text ) is export {
-    cmark_markdown_to_html( $text, $text.codes, CMARK_OPT_DEFAULT);
+    cmark_markdown_to_html( $text, $text.encode.elems, CMARK_OPT_DEFAULT);
 }
