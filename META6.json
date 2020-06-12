@@ -8,7 +8,7 @@
   "perl" : "6.d",
   "provides" : { "cmark::Simple":  "lib/cmark/Simple.rakumod" },
   "resources" : [ ],
-  "source-url" : "git@github.com:JJ/raku-cmark.git",
+  "source-url" : "https://github.com/JJ/raku-cmark.git",
   "tags" : [
     "modules", "markdown", "commonmark"
   ],
