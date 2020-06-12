@@ -8,9 +8,23 @@ A straightforward wrapper for [commonmark library](https://github.com/commonmark
 You need to install libcommonmark first, either from source or installing
  libcmark-dev from repositories.
 
+In the case of Ubuntu, you will need to manually copy the library to /usr
+/local/lib
+
+    sudo cp /usr/local/lib/libcmark.so.0.29.0 /usr/lib/libcmark.so
+
 ## Running
 
-<-- Some examples, or pointing to a directory with them -->
+```perl6
+use cmark;
+
+say commonmark-to-html(q:to/EOC/);
+# Header
+
+Filler
+## Another header
+EOC
+```
 
 ## See also
 
