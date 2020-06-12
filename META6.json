@@ -1,18 +1,16 @@
 {
-  "auth" : "",
-  "authors" : [],
-  "depends" : [
-    "NativeHelpers::Blob"
-  ],
-  "description" : "",
+  "auth" : "github:JJ",
+  "authors" : ["JJ Merelo"],
+  "depends" : [ ],
+  "description" : "Native port of the CommonMark library",
   "license" : "Artistic-2.0",
-  "name" : "",
+  "name" : "cmark",
   "perl" : "6.d",
-  "provides" : { },
+  "provides" : { "cmark" => "lib/cmark.rakumod" },
   "resources" : [ ],
   "source-url" : "",
   "tags" : [
-    "modules"
+    "modules", "markdown", "commonmark"
   ],
     "version" : "0.0.1",
     "meta-version": 1

@@ -1,5 +1,4 @@
 use NativeCall;
-use NativeHelpers::Blob;
 
 unit module cmark;
 
@@ -28,5 +27,5 @@ sub commonmark-to-html( Str $text ) is export {
     while $return[$index] {
         @bob.append: $return[$index++];
     }
-    return Blob.new: @bob;
+    return (Blob.new: @bob).decode;
 }

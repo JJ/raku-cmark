@@ -4,7 +4,6 @@ use cmark;
 
 my $str = "Basic";
 
-say commonmark-to-html($str).decode;
-ok( commonmark-to-html($str), "All good");
+is( commonmark-to-html($str), "<p>Basic</p>\n", "All good");
 
 done-testing;
