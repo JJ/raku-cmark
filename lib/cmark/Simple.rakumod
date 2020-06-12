@@ -1,6 +1,6 @@
 use NativeCall;
 
-unit module cmark;
+unit module cmark::Simple;
 
 constant \CMARK_OPT_DEFAULT is export = 0;
 constant \CMARK_OPT_SOURCEPOS  is export = 2;
@@ -13,19 +13,11 @@ constant \CMARK_OPT_VALIDATE_UTF8 = 512;
 constant \CMARK_OPT_SMART = 1024;
 
 
-sub cmark_markdown_to_html(CArray[uint8] $text,
+sub cmark_markdown_to_html(Str $text,
                            int32 $len, int8 $options
-        --> CArray[uint8] )
+        --> Str )
     is native("cmark") is export {*};
 
 sub commonmark-to-html( Str $text ) is export {
-    my CArray[uint8] $converted = CArray[uint8].new: |$text.ords;
-    my CArray[uint8] $return = cmark_markdown_to_html( $converted, $text.codes,
-    CMARK_OPT_DEFAULT);
-    my @bob;
-    my $index = 0;
-    while $return[$index] {
-        @bob.append: $return[$index++];
-    }
-    return (Blob.new: @bob).decode;
+    cmark_markdown_to_html( $text, $text.codes, CMARK_OPT_DEFAULT);
 }

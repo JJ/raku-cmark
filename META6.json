@@ -4,9 +4,9 @@
   "depends" : [ ],
   "description" : "Native port of the CommonMark library",
   "license" : "Artistic-2.0",
-  "name" : "cmark",
+  "name" : "cmark::Simple",
   "perl" : "6.d",
-  "provides" : { "cmark":  "lib/cmark.rakumod" },
+  "provides" : { "cmark::Simple":  "lib/cmark/Simple.rakumod" },
   "resources" : [ ],
   "source-url" : "",
   "tags" : [

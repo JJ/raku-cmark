@@ -1,6 +1,6 @@
 use Test;
 
-use cmark;
+use cmark::Simple;
 
 my $str = "Basic";
 

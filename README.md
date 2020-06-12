@@ -52,6 +52,8 @@ Use them directly in case you need to have mrore flexibility, or options such
 
 See [the commonmark page](https://commonmark.org/) for additional information.
 
+Also the excellent [Cmark module by Khalid Elboray](https://github.com/khalidelboray/raku-cmark) an alternative, more flexible, complete port.
+
 ## License
  
 This module will be licensed, by default, under the Artistic 2.0 License (the same as Raku itself)
