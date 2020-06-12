@@ -6,7 +6,7 @@
   "license" : "Artistic-2.0",
   "name" : "cmark",
   "perl" : "6.d",
-  "provides" : { "cmark" => "lib/cmark.rakumod" },
+  "provides" : { "cmark":  "lib/cmark.rakumod" },
   "resources" : [ ],
   "source-url" : "",
   "tags" : [
