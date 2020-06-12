@@ -1,4 +1,7 @@
-# cmark
+[![Build Status](https://travis-ci.com/JJ/raku-cmark.svg?branch=master)](https://travis-ci.com/JJ/raku-cmark)
+
+# cmark::Simple
+
 
 A straightforward wrapper for [commonmark library](https://github.com/commonmark/cmark)
 
@@ -16,7 +19,7 @@ In the case of Ubuntu, you will need to manually copy the library to /usr
 ## Running
 
 ```perl6
-use cmark;
+use cmark::Simple;
 
 say commonmark-to-html(q:to/EOC/);
 # Header
@@ -39,9 +42,9 @@ constant \CMARK_OPT_VALIDATE_UTF8 = 512;
 constant \CMARK_OPT_SMART = 1024;
 
 
-sub cmark_markdown_to_html(CArray[uint8] $text,
+sub cmark_markdown_to_html(Str $text,
                            int32 $len, int8 $options
-                            --> CArray[uint8] )
+                            --> Str )
 ```
 
 Use them directly in case you need to have mrore flexibility, or options such
