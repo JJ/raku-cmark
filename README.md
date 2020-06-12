@@ -1,14 +1,12 @@
-# Raku Distribution Template
+# cmark
 
-Template for Raku modules, classes, roles, to be distributed as a
-single package in the ecosystem. Fill this README with your
-instructions.
+A straightforward wrapper for [commonmark library](https://github.com/commonmark/cmark)
 
 ## Installing
 
 
-<-- Fill your prerequisites here, how to install using zef, how to
-install from source -->
+You need to install libcommonmark first, either from source or installing
+ libcmark-dev from repositories.
 
 ## Running
 
