@@ -9,7 +9,7 @@ A straightforward wrapper for [commonmark library](https://github.com/commonmark
 
 
 You need to install libcommonmark first, either from source or installing
- libcmark-dev from repositories.
+ `libcmark-dev` from Debian repositories.
 
 In the case of Ubuntu, you will need to manually copy the library to /usr
 /local/lib
