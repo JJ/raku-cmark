@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.com/JJ/raku-cmark.svg?branch=master)](https://travis-ci.com/JJ/raku-cmark)
-
-# cmark::Simple
+# cmark::Simple [![Test Raku](https://github.com/JJ/raku-cmark/actions/workflows/test.yaml/badge.svg)](https://github.com/JJ/raku-cmark/actions/workflows/test.yaml)
 
 
 A straightforward wrapper for [commonmark library](https://github.com/commonmark/cmark)
