@@ -48,8 +48,7 @@ sub cmark_markdown_to_html(Str $text,
 ```
 
 Use them directly in case you need to have mrore flexibility, or options such
- as validating UTF8. Check [the manual page](https://manpages.debian.org
- /testing/libcmark-dev/cmark.3.en.html) for instructions.
+ as validating UTF8. Check [the manual page](https://manpages.debian.org/testing/libcmark-dev/cmark.3.en.html) for instructions.
  
 ## See also
 
