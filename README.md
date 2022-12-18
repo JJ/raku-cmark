@@ -9,10 +9,12 @@ A straightforward wrapper for [commonmark library](https://github.com/commonmark
 You need to install libcommonmark first, either from source or installing
  `libcmark-dev` from Debian repositories.
 
-In the case of Ubuntu, you will need to manually copy the library to /usr
-/local/lib
+In the case of Ubuntu, you will need to manually copy the library to `/usr/lib`
 
     sudo cp /usr/local/lib/libcmark.so.0.29.0 /usr/lib/libcmark.so
+
+Latest version is `0.30.2`. Use whatever version you've installed in your
+ system.
 
 ## Running
 
