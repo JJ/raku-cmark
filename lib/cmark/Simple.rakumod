@@ -16,7 +16,7 @@ constant CMARK_OPT_SMART = 1024;
 sub cmark_markdown_to_html(Str $text,
                            int32 $len, int8 $options
         --> Str )
-    is native("cmark") is export {*};
+    is native("cmark", v0.29.0) is export {*};
 
 sub commonmark-to-html( Str $text ) is export {
     cmark_markdown_to_html( $text, $text.encode.elems, CMARK_OPT_DEFAULT);
