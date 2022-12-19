@@ -1,5 +1,5 @@
 {
-  "auth" : "github:JJ",
+  "auth" : "zef:jjmerelo",
   "authors" : ["JJ Merelo"],
   "depends" : [ "Native::FindVersion:ver<0.0.2+>"],
   "description" : "Native port of the CommonMark library",
