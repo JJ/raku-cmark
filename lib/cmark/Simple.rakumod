@@ -1,4 +1,5 @@
 use NativeCall;
+use Native::FindVersion;
 
 unit module cmark::Simple;
 
@@ -12,11 +13,14 @@ constant CMARK_OPT_NORMALIZE = 256;
 constant CMARK_OPT_VALIDATE_UTF8 = 512;
 constant CMARK_OPT_SMART = 1024;
 
+constant $library-name = "cmark";
+constant $version = latest-version( $library-name );
+say $version;
 
 sub cmark_markdown_to_html(Str $text,
                            int32 $len, int8 $options
         --> Str )
-    is native("cmark", v0.29.0) is export {*};
+    is native($library-name, $version) is export {*};
 
 sub commonmark-to-html( Str $text ) is export {
     cmark_markdown_to_html( $text, $text.encode.elems, CMARK_OPT_DEFAULT);
