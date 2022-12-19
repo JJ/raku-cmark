@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name : Install cmark
-        run: apk add libcmark && cp /usr/lib/libcmark.so.0.30.2 /usr/lib/libcmark.so
+        run: apk add libcmark
       - name: Test
         run: zef --debug test .
 
