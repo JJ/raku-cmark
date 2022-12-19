@@ -1,7 +1,7 @@
 {
   "auth" : "github:JJ",
   "authors" : ["JJ Merelo"],
-  "depends" : [ "Native::FindVersion:ver<0.0.2+>)"],
+  "depends" : [ "Native::FindVersion:ver<0.0.2+>"],
   "description" : "Native port of the CommonMark library",
   "license" : "Artistic-2.0",
   "name" : "cmark::Simple",
